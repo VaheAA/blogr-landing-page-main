@@ -23,19 +23,32 @@ html {
 }
 
 body {
-    padding: 50px;
+    width: 100%;
+    font-family: 'Overpass', sans-serif;
 }
 
 /* Header styles */
 
 header {
-    width: 100%;
-    background: linear-gradient(120deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    max-width: 100%;
+    background: url('/images/bg-pattern-intro.svg') no-repeat center, linear-gradient(120deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-size: cover;
+    padding: 50px;
+    border-bottom-left-radius: 100px;
+    
 }
 
 nav {
     display: flex;
-    padding: 50px;
+    padding: 20px 150px 80px 150px;
+}
+
+
+.logo-container {
+    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
 
 .logo {
@@ -51,14 +64,57 @@ nav {
    padding: 0;
    text-decoration: none;
    color: var(--text-color);
+   opacity: 0.7;
+   display: flex;
+   gap: 10px;
+   font-weight: 500;
+   transition: all 0.3s ease;
+}
+
+.dropdown-hover:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+.dropdown-nav {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.dropdown-hover:hover .arrow{
+    transform: rotate(180deg);
+}
+
+.dropdown:hover .dropdown-nav {
+    display: block;
+}
+
+.arrow {
+    transition: all 0.3s ease;
 }
 
 .dropdown-nav {
     display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 110px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 10px;
+    line-height: 2.5;
+    border-radius: 5px;
+    margin-top: 5px;
+    transition: all 0.3s ease;
 }
 
 .nav-link {
     text-decoration: none;
+    color: var(--body-text);
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    font-weight: bold;
 }
 
 .sign-up {
@@ -71,7 +127,34 @@ nav {
 
 .sign-up a {
     text-decoration: none;
-   
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.login-btn {
+    color: var(--text-color);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    opacity: 1;
+}
+
+.signup-btn {
+    color: var(--cta-text-color);
+    background: var(--text-color);
+    border-radius: 20px;
+}
+
+.signup-btn:hover {
+    color: var(--text-color);
+    background: var(--cta-hover-color);
+}
+
+.icon {
+    display: none;
 }
 
 .banner {
@@ -79,6 +162,51 @@ nav {
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    color: var(--text-color);
 }
 
+.title {
+    font-size: 3rem;
+    padding: 10px;
+}
 
+.subtitle {
+    font-size: 1rem;
+    padding: 5px;
+    font-weight: 300;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.buttons > a {
+    text-decoration: none;
+    padding: 10px 25px;
+}
+
+.start-btn {
+    background: var(--text-color);
+    color: var(--cta-text-color);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.start-btn:hover {
+    color: var(--text-color);
+    background: var(--cta-hover-color);
+}
+
+.learn-more-btn {
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover{
+    background: var(--text-color);
+    color: var(--cta-text-color);
+}
