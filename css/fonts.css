@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Overpass';
+    src: url('/fonts/Overpass/Overpass-Black.ttf');
+    src: url('/fonts/Overpass/Overpass-BlackItalic.ttf'), url('/fonts/Overpass/Overpass-BoldItalic.ttf'), url('/fonts/Overpass/Overpass-ExtraLight.ttf'), url('/fonts/Overpass/Overpass-Italic.ttf'), url('/fonts/Overpass/Overpass-Light.ttf'), url('/fonts/Overpass/Overpass-LightItalic.ttf'), url('/fonts/Overpass/Overpass-Regular.ttf'), url('/fonts/Overpass/Overpass-SemiBold.ttf'), url('/fonts/Overpass/Overpass-SemiBoldItalic.ttf'), url('/fonts/Overpass/Overpass-Thin.ttf'), url('/fonts/Overpass/Overpass-ThinItalic.ttf');
+
+    font-family: 'Ubuntu';
+    src: url('/fonts/Ubuntu/Ubuntu-Bold.ttf'), url('/fonts/Ubuntu/Ubuntu-BoldItalic.ttf'), url('/fonts/Ubuntu/Ubuntu-Italic.ttf'), url('/fonts/Ubuntu/Ubuntu-Light.ttf'), url('/fonts/Ubuntu/Ubuntu-LightItalic.ttf'), url('/fonts/Ubuntu/Ubuntu-Medium.ttf'), url('/fonts/Ubuntu/Ubuntu-MediumItalic.ttf'), url('/fonts/Ubuntu/Ubuntu-Regular.ttf');
+}
