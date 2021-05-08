@@ -20,6 +20,8 @@
 
 html {
     height: 100%;
+    background-color: rgb(235, 235, 235);
+
 }
 
 body {
@@ -219,11 +221,6 @@ nav {
     padding: 20px 150px 80px 150px;
 }
 
-main {
-    background-color: rgb(235, 235, 235);
-    /* border-top-left-radius: 100px; */
-}
-
 .text-container {
     width: 100%;
     display: flex;
@@ -239,10 +236,15 @@ main {
     max-width: 100%;
 }
 
+.mobile {
+    display: none;
+}
+
 .title-section {
     display: flex;
     justify-content: center;
     padding: 50px 150px 20px 150px;
+    margin-bottom: 20px;
 }
 
 .secondary-title{
@@ -253,6 +255,7 @@ main {
 .section-subtitle {
     color: var(--headings-color);
     margin-bottom: 20px;
+    font-size: 1.2rem;
 }
 
 .text {
@@ -261,4 +264,95 @@ main {
 
 .main-text {
     color: var(--body-text);
+    line-height: 1.5;
+}
+
+/* Section two styles  */
+
+.second-section {
+    padding: 20px 150px 20px 150px;
+    background: url('/images/bg-pattern-circles.svg') no-repeat, hsl(237, 17%, 21%);
+    background-position: -400px -650px;
+    background-size: cover;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.container {
+    display: flex;
+    margin-top: -80px;
+}
+
+.inner-title {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+}
+
+.inner-text {
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+/* Section three styles */
+
+.third-section {
+    padding: 80px 150px 80px 150px;
+    margin-top: 100px;
+}
+
+.text {
+    width: 100%;
+}
+
+/* Footer styles */
+
+footer {
+    padding: 20px 150px 80px 150px;
+    background: var(--footer-background);
+    border-top-right-radius: 100px;
+
+}
+
+.footer-nav {
+    display: flex;
+}
+
+.nav-column {
+    width: 100%;
+    padding: 25px;
+}
+
+.footer-nav-link_main,
+.footer-nav-link_sub {
+    color: var(--footer-text);
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+.footer-nav-link_main {
+    font-weight: 700;
+}
+
+.footer-nav-link_sub:hover {
+    text-decoration: underline;
+    transition: all 0.3s ease;
+
+}
+
+
+.footer-nav-links {
+    list-style: none;
+    margin-top: 25px;
+}
+
+.footer-nav-links > li {
+    line-height: 2;
+
+}
+
+.footer-logo {
+    width: 50%;
+    padding: 20px;
+    align-self: auto;
 }

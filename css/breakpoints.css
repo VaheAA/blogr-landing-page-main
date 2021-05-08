@@ -1,6 +1,87 @@
 @media only screen and (max-width: 600px) {
-    .dropdown {
-        display: none
+    .section {
+        flex-direction: column-reverse;
+        max-width: 100%;
+        padding: 1rem;
+        margin-bottom: 150px;
+        gap: 20px;
+    }
+
+    .top-section {
+        margin-top: 25px;
+    }
+
+    .title-section {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .secondary-title {
+        font-size: 1.5rem;
+    }
+
+    .section-subtitle,
+    .main-text {
+        text-align: center;
+    }
+
+    .section-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        padding: 45px 0;
     }
     
+    .second-section {
+        margin-top: 25px;
+        padding: 2rem 1.5rem 2rem 1.5rem;
+        background-position: -100px -200px;
+
+    }
+
+    .container {
+        flex-direction: column;
+    }
+     
+    .phones-mobile {
+        margin-top: -180px;
+
+    }
+
+    .inner-title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .inner-text {
+        text-align: center;
+        font-size: .9rem;
+        font-weight: 300;
+        max-width: 35ch;
+        margin: 0 auto;
+    }
+
+    .third-section {
+        padding: 1rem;
+        margin-top: 50px;
+    }
+
+    .container-mobile {
+        margin-top: 0;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
   }
