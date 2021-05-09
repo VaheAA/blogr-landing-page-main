@@ -23,7 +23,10 @@
         text-align: center;
         position: inherit;
     }
-
+     
+    .toggled {
+        display: flex;
+    }
 
     .title {
         font-size: 1.5rem;
@@ -60,6 +63,25 @@
         box-shadow: none;
         transition: all 0.8s ease;
     }
+
+    .mobile-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger-icon {
+        color: var(--text-color);
+        cursor: pointer;
+    }
+
+    .close-icon {
+        color: var(--text-color);
+        cursor: pointer;
+    }
+
+    .close {
+        display: none;
+    }
       
    .active {
     background-color: gainsboro;
@@ -95,7 +117,7 @@
         text-decoration: none;
         padding: 10px 15px;
     }
-    
+
     .section {
         flex-direction: column-reverse;
         max-width: 100%;

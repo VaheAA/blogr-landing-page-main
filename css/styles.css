@@ -215,6 +215,13 @@ nav {
     color: var(--cta-text-color);
 }
 
+.mobile-header {
+    display: none;
+}
+
+.close-icon {
+    display: none;
+}
 /* Section one styles  */
 
 .section {
