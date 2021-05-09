@@ -1,23 +1,72 @@
+@import url('/css/styles.css');
 @media only screen and (max-width: 600px) {
 
     body {
         max-width: 100%;
     }
 
+    header {
+        padding: 1rem;
+        width: 100%;
+    }
+
     nav {
         padding: 1rem;
         flex-direction: column;
-        background-color: #f1f1f1;
-        z-index: 1;
-        position: absolute;
+        background-color: white;
+        z-index: 2;
+        max-width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+        align-items: center;
+        text-align: center;
+        position: inherit;
+    }
+
+    .dropdown-hover {
+        color: var(--body-text);
+        opacity: 1;
+        font-weight: 700;
+        align-items: center;
+    }
+
+    .dropdown {
+       width: 100%;
+       padding: 0;
     }
 
     .dropdown-nav {
-        display: block;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
         position: static;
         z-index: 0;
         background-color: inherit;
         box-shadow: none;
+        transition: all 0.8s ease;
+    }
+      
+   .active {
+    background-color: gainsboro;
+   }
+
+    .sign-up {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .login-btn {
+        color: var(--body-text);
+        opacity: 1;
+    }
+
+    .signup-btn {
+        background-color: var(--cta-hover-color);
+        color: white;
+        opacity: 1;
     }
 
     .section {
@@ -105,4 +154,8 @@
         flex-direction: column;
         flex-wrap: nowrap;
     }
+
+    
+
+
   }

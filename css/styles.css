@@ -71,6 +71,8 @@ nav {
    gap: 10px;
    font-weight: 500;
    transition: all 0.3s ease;
+   justify-content: center;
+   cursor: pointer;
 }
 
 .dropdown-hover:hover {
