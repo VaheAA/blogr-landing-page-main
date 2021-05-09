@@ -1,12 +1,12 @@
 const acc = document.getElementsByClassName("dropdown-hover");
 const arrow = document.getElementsByClassName("arrow");
-const hamburger = document.querySelector(".hamburger");
+const hamburger = document.querySelector(".hamburger-icon");
 const close = document.querySelector('.close')
 const nav = document.querySelector('.toggle');
-let i;
 
 
-for (i = 0; i < acc.length; i++) {
+
+for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     const panel = this.nextElementSibling;
     if (panel.style.display === "flex") {
@@ -21,6 +21,20 @@ for (i = 0; i < acc.length; i++) {
     document.querySelector('.arrow-hover').classList.remove('arrow-hover');
   }
 }
+
+const footerNav = document.getElementsByClassName('footer-nav-link_main');
+
+for (let j = 0; j < footerNav.length; j++) {
+  footerNav[j].addEventListener("click", function() {
+    const footerLink = this.nextElementSibling;
+    if (footerLink.style.display === "block") {
+      footerLink.style.display = "none";
+    } else {
+      footerLink.style.display = "block";
+    }
+  });
+}
+
 
 const toggleHamburger = () => {
   

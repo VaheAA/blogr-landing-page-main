@@ -16,17 +16,18 @@
         flex-direction: column;
         background-color: white;
         z-index: 2;
-        max-width: 90%;
+        max-width: 80%;
         margin: 0 auto;
         margin-top: 20px;
         align-items: center;
         text-align: center;
         position: inherit;
+        transition: all 0.3s ease;
+        border-radius: 10px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding-bottom: 30px;
     }
      
-    .toggled {
-        display: flex;
-    }
 
     .title {
         font-size: 1.5rem;
@@ -57,6 +58,8 @@
         flex-direction: column;
         justify-content: center;
         width: 100%;
+        max-width: 80%;
+        margin: 0 auto;
         position: static;
         z-index: 0;
         background-color: inherit;
@@ -201,7 +204,15 @@
 
     .footer-nav {
         flex-direction: column;
-        flex-wrap: nowrap;
+        text-align: center;
     }
 
+    .nav-column {
+        padding: .5rem;
+        cursor: pointer;
+    }
+
+    .footer-nav-links {
+        display: none;
+    }
   }
