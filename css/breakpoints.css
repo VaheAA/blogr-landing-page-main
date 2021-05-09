@@ -11,6 +11,7 @@
     }
 
     nav {
+        display: none;
         padding: 1rem;
         flex-direction: column;
         background-color: white;
@@ -21,6 +22,19 @@
         align-items: center;
         text-align: center;
         position: inherit;
+    }
+
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: .9rem;
+    }
+     
+    .desktop-logo {
+        display: none;
     }
 
     .dropdown-hover {
@@ -51,6 +65,10 @@
     background-color: gainsboro;
    }
 
+   .arrow-active{
+       transform: rotate(180deg);
+   }
+
     .sign-up {
         flex-direction: column;
         align-items: center;
@@ -69,6 +87,15 @@
         opacity: 1;
     }
 
+    .banner {
+        text-align: center;
+    }
+
+    .buttons > a {
+        text-decoration: none;
+        padding: 10px 15px;
+    }
+    
     .section {
         flex-direction: column-reverse;
         max-width: 100%;
@@ -154,8 +181,5 @@
         flex-direction: column;
         flex-wrap: nowrap;
     }
-
-    
-
 
   }

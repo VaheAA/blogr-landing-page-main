@@ -84,11 +84,11 @@ nav {
     transition: all 0.3s ease;
 }
 
-.dropdown-hover:hover .arrow{
+.arrow-hover:hover .arrow{
     transform: rotate(180deg);
 }
 
-.dropdown:hover .dropdown-nav {
+.hover:hover .dropdown-nav {
     display: block;
 }
 
