@@ -308,7 +308,7 @@ nav {
 /* Footer styles */
 
 footer {
-    padding: 20px 150px 80px 150px;
+    padding: 20px 150px 10px 150px;
     background: var(--footer-background);
     border-top-right-radius: 100px;
 

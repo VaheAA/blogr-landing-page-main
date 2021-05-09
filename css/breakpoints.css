@@ -1,4 +1,25 @@
 @media only screen and (max-width: 600px) {
+
+    body {
+        max-width: 100%;
+    }
+
+    nav {
+        padding: 1rem;
+        flex-direction: column;
+        background-color: #f1f1f1;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .dropdown-nav {
+        display: block;
+        position: static;
+        z-index: 0;
+        background-color: inherit;
+        box-shadow: none;
+    }
+
     .section {
         flex-direction: column-reverse;
         max-width: 100%;
