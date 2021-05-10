@@ -51,18 +51,6 @@ const toggleHamburger = () => {
   }
   
 
-  // if(nav.style.display
-  //   === 'none') {
-  //     nav.style.display = 'flex';
-  //     hamburger.style.display = 'none';
-  //     close.style.display = 'flex';
-  //   } else {
-  //     nav.style.display = 'none';
-  //     close.style.display = 'none';
-  //     hamburger.style.display = 'flex'
-  //   }
-  // }
-
 hamburger.addEventListener('click', toggleHamburger);
 close.addEventListener('click', toggleHamburger);
 
