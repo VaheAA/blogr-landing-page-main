@@ -37,18 +37,31 @@ for (let j = 0; j < footerNav.length; j++) {
 
 
 const toggleHamburger = () => {
-  
-  if(nav.style.display
-  === 'none') {
-    nav.style.display = 'flex';
-    hamburger.style.display = 'none';
-    close.style.display = 'flex';
-  } else {
-    nav.style.display = 'none';
-    close.style.display = 'none';
-    hamburger.style.display = 'flex'
+  for(let k = 0; k < 1; k++) {
+    if(nav.style.display=== 'none') {
+        nav.style.display = 'flex';
+        hamburger.style.display = 'none';
+        close.style.display = 'flex';
+      } else {
+        nav.style.display = 'none';
+        close.style.display = 'none';
+        hamburger.style.display = 'flex'
+      }
+    }
   }
-}
+  
+
+  // if(nav.style.display
+  //   === 'none') {
+  //     nav.style.display = 'flex';
+  //     hamburger.style.display = 'none';
+  //     close.style.display = 'flex';
+  //   } else {
+  //     nav.style.display = 'none';
+  //     close.style.display = 'none';
+  //     hamburger.style.display = 'flex'
+  //   }
+  // }
 
 hamburger.addEventListener('click', toggleHamburger);
 close.addEventListener('click', toggleHamburger);
