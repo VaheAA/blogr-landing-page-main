@@ -16,9 +16,12 @@ for (let i = 0; i < acc.length; i++) {
     }    
     panel.classList.toggle("active");
   });
-  if(screen.width <= 600) {
+  if(screen.width < 600) {
     document.querySelector('.hover').classList.remove('hover');
     document.querySelector('.arrow-hover').classList.remove('arrow-hover');
+  }
+  if(screen.width > 600) {
+    acc[i].removeEventListener('click');
   }
 }
 
